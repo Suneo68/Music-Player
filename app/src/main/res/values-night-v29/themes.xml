@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MusicPlayer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        //Primary color
+        <item name="colorPrimary">@color/cool_blue</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        //Second color
+        <item name="colorSecondary">@color/cool_green</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        //Trang thai
+        <item name="android:statusBarColor" tools:targetApi="l">@color/cool_pink</item>
+        //Theme App
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+        //Theme cho Activity
+        <style name="coolBlue" parent="Theme.MaterialComponents.Light.NoActionBar">
+                <item name="colorPrimary">@color/white</item>
+                <item name="colorPrimaryVariant">@color/black</item>
+                <item name="colorOnPrimary">@color/black</item>
+                <item name="colorSecondary">@color/white</item>
+                <item name="colorOnSecondary">@color/black</item>
+                <item name="colorSecondaryVariant">@color/black</item>
+                <item name="android:statusBarColor" tools:targetApi = "l">@color/cool_pink</item>
+                <item name="android:forceDarkAllowed">false</item>
+        </style>
+
+        //Theme cho Navi Drawer
+        <style name="coolBlueNav" parent="Theme.MaterialComponents.Light">
+                <item name="colorPrimary">@color/white</item>
+                <item name="colorPrimaryVariant">@color/black</item>
+                <item name="colorOnPrimary">@color/black</item>
+                <item name="colorSecondary">@color/white</item>
+                <item name="colorOnSecondary">@color/black</item>
+                <item name="colorSecondaryVariant">@color/black</item>
+                <item name="android:statusBarColor" tools:targetApi = "l">@color/cool_blue</item>
+                <item name="android:forceDarkAllowed">false</item>
+        </style>
+</resources>

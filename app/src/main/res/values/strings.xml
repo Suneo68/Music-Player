@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="shuffle_btn">Trộn</string>
+    <string name="favorite_btn">Yêu thích</string>
+    <string name="playlist_btn">Playlists</string>
+    <string name="album_btn">Album</string>
+    <string name="total_songs">Danh mục bài hát</string>
+    <string name="back_icon">Trở lại</string>
+    <string name="world_music">Thế Giới Âm Nhạc</string>
+    <string name="favorite_empty_icon">Yêu Thích</string>
+    <string name="song_name">Tên bài hát</string>
+    <string name="next_player_icon">Chuyển tiếp bài hát</string>
+    <string name="pause_icon">Dừng</string>
+    <string name="back_player_icon">Trở lại bài hát cũ</string>
+    <string name="start_song">00:00</string>
+    <string name="end_song">Loading ..</string>
+    <string name="repeat_btn">Lặp lại</string>
+    <string name="equalier_btn">Trạng thái</string>
+    <string name="timer_btn">Hẹn giờ</string>
+    <string name="share_btn">Chia sẻ</string>
+    <string name="add_btn">Thêm</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="app_icon">App Icon</string>
+    <string name="text_nav">  ~Âm nhạc~\n ~Xoa dịu tâm hồn bạn~ </string>
+    <string name="feedback">Phản hồi</string>
+    <string name="Settings">Cài đặt</string>
+    <string name="about">Thông tin</string>
+    <string name="Exit">Thoát</string>
+    <string name="song_album">Danh sách bài hát</string>
+
+
+
+</resources>
+
+
+
+
