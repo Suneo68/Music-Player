@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/backBtnPA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="5dp"
@@ -34,6 +35,7 @@
             android:textStyle="bold" />
 
         <ImageButton
+            android:id="@+id/favoriteBtnPA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="5dp"
@@ -58,13 +60,13 @@
     <TextView
         android:id="@+id/songNamePA"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="@string/song_name"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,6 +75,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tvSeekBarStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -81,11 +84,13 @@
             android:textSize="15sp" />
 
         <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarPA"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/tvSeekBarEnd"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -143,8 +148,9 @@
         android:layout_marginTop="60dp"
         android:layout_weight="1"
         android:orientation="horizontal">
-
+<!--    Nut Lap lai-->
         <ImageButton
+            android:id="@+id/repeatBtnPA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="5dp"
@@ -155,8 +161,9 @@
             app:tint="@color/cool_pink"
             tools:ignore="NestedWeights"
             android:padding="5dp"/>
-
+<!--    Nut Dieu Chinh Tong Nhac-->
         <ImageButton
+            android:id="@+id/equalizerBtnPA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="5dp"
@@ -166,8 +173,9 @@
             android:src="@drawable/equalier_icon"
             app:tint="@color/black"
             android:padding="5dp"/>
-
+<!--    Nut Hen Gio-->
         <ImageButton
+            android:id="@+id/timerBtnPA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="5dp"
@@ -177,8 +185,9 @@
             android:src="@drawable/timer_icon"
             app:tint="@color/yellow"
             android:padding="5dp"/>
-
+<!--    Nut Chia Se-->
         <ImageButton
+            android:id="@+id/shareBtnPA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="5dp"
@@ -186,7 +195,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/share_btn"
             android:src="@drawable/share_icon"
-            app:tint="@color/cool_green"
+            app:tint="@color/cool_blue"
             android:padding="5dp"/>
 
     </LinearLayout>

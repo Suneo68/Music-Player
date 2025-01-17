@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/min_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UseCompoundDrawables">
+<!--    15 phut-->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/timer_icon"
+            app:tint="@color/yellow"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/bottom_sheet_time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/min_15"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+    </LinearLayout>
+<!--    30 phut-->
+    <LinearLayout
+        android:id="@+id/min_30"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/timer_icon"
+            app:tint="@color/yellow"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/bottom_sheet_time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/min_30"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+    </LinearLayout>
+<!--    60 phut-->
+    <LinearLayout
+        android:id="@+id/min_60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/timer_icon"
+            app:tint="@color/yellow"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/bottom_sheet_time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/min_60"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

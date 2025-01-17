@@ -8,6 +8,7 @@
     tools:context=".FavoriteActivity">
 
     <LinearLayout
+        android:id="@+id/LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="65dp"
@@ -18,8 +19,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:id="@+id/backBtnFA"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:backgroundTint="@android:color/transparent"
             android:contentDescription="@string/back_icon"
             android:padding="5dp"
@@ -37,8 +39,22 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favoriteRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearLayout"
+        android:scrollbarThumbVertical="@drawable/scroll_bar_icon"
+        android:scrollbars="vertical"
+        android:paddingBottom="40dp"
+        android:layout_marginTop="10dp"/>
+    
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/shuffleBtnFA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:icon="@drawable/shuffle_icon"

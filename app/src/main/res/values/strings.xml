@@ -28,9 +28,18 @@
     <string name="about">Thông tin</string>
     <string name="Exit">Thoát</string>
     <string name="song_album">Danh sách bài hát</string>
-
-
-
+    <string name="min_15">15 Phút</string>
+    <string name="min_30">30 Phút</string>
+    <string name="min_60">60 Phút</string>
+    <string name="bottom_sheet_time">Danh mục hẹn giờ</string>
+    <string name="search_view">Danh sách tìm kiếm</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="song_img">Tên bài hát</string>
+    <string name="playlist_name">Tên Playlist</string>
+    <string name="playlist_delete">Xoá Playlist</string>
+    <string name="album_name">Tên Album</string>
+    <string name="album_delete">Xoá Album</string>
+    <string name="user_name">Tên người dùng</string>
 </resources>
 
 

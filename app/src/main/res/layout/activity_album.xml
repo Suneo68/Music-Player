@@ -7,6 +7,7 @@
     tools:context=".AlbumActivity">
 
     <LinearLayout
+        android:id="@+id/LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -17,8 +18,9 @@
         android:layout_marginTop="60dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:id="@+id/backBtnABA"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:backgroundTint="@android:color/transparent"
             android:contentDescription="@string/back_icon"
             android:src="@drawable/back_icon"
@@ -35,6 +37,17 @@
             android:textStyle="bold"/>
 
     </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/albumRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearLayout"
+        android:scrollbarThumbVertical="@drawable/scroll_bar_icon"
+        android:scrollbars="vertical"
+        android:paddingBottom="40dp"
+        android:layout_marginTop="10dp"/>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:layout_width="wrap_content"

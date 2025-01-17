@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.musicplayer"
-        minSdk = 24
+        minSdk = 26
         //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
@@ -47,10 +47,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.mediarouter)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     //Glide for image loading
     implementation (libs.glide)
     annotationProcessor ( libs.compiler)
+    //for notification
+    implementation(libs.androidx.media)
+    //for storing objects in shared preferences
+    implementation (libs.gson)
 }
