@@ -14,7 +14,8 @@
         android:layout_height="130dp"
         android:src="@drawable/music"
         app:shapeAppearanceOverlay="@style/curved"
-        android:contentDescription="@string/song_img"/>
+        android:contentDescription="@string/song_img"
+        android:layout_gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/albumName"

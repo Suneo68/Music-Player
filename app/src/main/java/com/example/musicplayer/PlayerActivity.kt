@@ -242,6 +242,44 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
                 musicListPA.shuffle()
                 setLayout()
             }
+            "PlaylistDetailsAdapter" -> {
+                //Bắt đầu phát nhạc
+                val intent = Intent(this,MusicService::class.java)
+                bindService(intent, this, BIND_AUTO_CREATE)
+                startService(intent)
+                musicListPA = ArrayList()
+                musicListPA.addAll(PlaylistActivity.musicPlaylist.ref[PlaylistDetails.currentPlaylistPos].playlist)
+                setLayout()
+            }
+            "AlbumDetailsAdapter" -> {
+                //Bắt đầu phát nhạc
+                val intent = Intent(this,MusicService::class.java)
+                bindService(intent, this, BIND_AUTO_CREATE)
+                startService(intent)
+                musicListPA = ArrayList()
+                musicListPA.addAll(AlbumActivity.musicAlbum.ref[AlbumDetails.currentAlbumPos].album)
+                setLayout()
+            }
+            "PlaylistDetailsShuffle" -> {
+                //Bắt đầu phát nhạc
+                val intent = Intent(this,MusicService::class.java)
+                bindService(intent, this, BIND_AUTO_CREATE)
+                startService(intent)
+                musicListPA = ArrayList()
+                musicListPA.addAll(PlaylistActivity.musicPlaylist.ref[PlaylistDetails.currentPlaylistPos].playlist)
+                musicListPA.shuffle()
+                setLayout()
+            }
+            "AlbumDetailsShuffle" -> {
+                //Bắt đầu phát nhạc
+                val intent = Intent(this,MusicService::class.java)
+                bindService(intent, this, BIND_AUTO_CREATE)
+                startService(intent)
+                musicListPA = ArrayList()
+                musicListPA.addAll(AlbumActivity.musicAlbum.ref[AlbumDetails.currentAlbumPos].album)
+                musicListPA.shuffle()
+                setLayout()
+            }
         }
     }
 
@@ -297,7 +335,14 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
         }catch (e:Exception){return}
     }
 
-    @Deprecated("This method has been deprecated in favor of using the Activity Result API\n      which brings increased type safety via an {@link ActivityResultContract} and the prebuilt\n      contracts for common intents available in\n      {@link androidx.activity.result.contract.ActivityResultContracts}, provides hooks for\n      testing, and allow receiving results in separate, testable classes independent from your\n      activity. Use\n      {@link #registerForActivityResult(ActivityResultContract, ActivityResultCallback)}\n      with the appropriate {@link ActivityResultContract} and handling the result in the\n      {@link ActivityResultCallback#onActivityResult(Object) callback}.")
+    @Deprecated("This method has been deprecated in favor of using the Activity Result API\n      " +
+            "which brings increased type safety via an {@link ActivityResultContract} and the prebuilt\n      " +
+            "contracts for common intents available in\n      " +
+            "{@link androidx.activity.result.contract.ActivityResultContracts}, provides hooks for\n      " +
+            "testing, and allow receiving results in separate, testable classes independent from your\n      activity. Use\n      " +
+            "{@link #registerForActivityResult(ActivityResultContract, ActivityResultCallback)}\n      " +
+            "with the appropriate {@link ActivityResultContract} and handling the result in the\n      " +
+            "{@link ActivityResultCallback#onActivityResult(Object) callback}.")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 13 || requestCode == RESULT_OK) {

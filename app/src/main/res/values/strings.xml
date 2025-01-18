@@ -40,6 +40,8 @@
     <string name="album_name">Tên Album</string>
     <string name="album_delete">Xoá Album</string>
     <string name="user_name">Tên người dùng</string>
+    <string name="remove_song">Loại bỏ</string>
+    <string name="search_songs">Tìm kiếm bài hát</string>
 </resources>
 
 

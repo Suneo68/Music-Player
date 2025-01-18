@@ -2,43 +2,47 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlbumActivity">
+    tools:context=".SelectionActivity">
 
     <LinearLayout
         android:id="@+id/LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/cool_pink"
-        android:layout_marginTop="60dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/backBtnABA"
+            android:id="@+id/backBtnSA"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:backgroundTint="@android:color/transparent"
             android:contentDescription="@string/back_icon"
             android:src="@drawable/back_icon"
-            app:tint="@color/white"/>
+            app:tint="@color/black"
+            android:layout_gravity="center"/>
 
-        <TextView
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewSA"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/album_btn"
-            android:text="@string/album_btn"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:layout_height="50dp"
+            app:queryHint="@string/search_songs"
+            app:searchIcon="@drawable/search_icon"
+            android:focusable="false"
+            app:iconifiedByDefault="false"
+            android:background="@drawable/custom_search_view"
+            android:padding="5dp"
+            android:layout_margin="3dp"/>
 
     </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/albumRV"
+        android:id="@+id/selectionRV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,25 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/LinearLayout"
         android:scrollbarThumbVertical="@drawable/scroll_bar_icon"
         android:scrollbars="vertical"
-        android:paddingBottom="40dp"
+        android:paddingBottom="50dp"
         android:layout_marginTop="10dp"/>
-
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/addAlbumBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:icon="@drawable/add_icon"
-        app:iconSize="35dp"
-        app:iconTint="@color/cool_pink"
-        android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9"
-        app:strokeWidth="2dp"
-        app:strokeColor="@color/cool_pink"
-        android:contentDescription="@string/add_btn"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

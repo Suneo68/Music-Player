@@ -15,6 +15,25 @@ data class Music (val id:String,
                   val duration: Long = 0,
                   val path:String,
                     val artUri: String)
+
+class Playlist{
+    lateinit var name: String
+    lateinit var playlist: ArrayList<Music>
+//    lateinit var createBy: String
+    lateinit var createdOn: String
+}
+class MusicPlaylist{
+    var ref: ArrayList<Playlist> = ArrayList()
+}
+class Album{
+    lateinit var name: String
+    lateinit var album: ArrayList<Music>
+    lateinit var createBy: String
+    lateinit var createdOn: String
+}
+class MusicAlbum{
+    var ref: ArrayList<Album> = ArrayList()
+}
 @SuppressLint("DefaultLocale")
 fun formatDuration(duration: Long): String{
 
